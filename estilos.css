@@ -1,0 +1,89 @@
+/* === ESTILO GLOBAL === */
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f8f9fa;
+  color: #212529;
+}
+
+/* === NAVBAR === */
+
+.navbar-brand {
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.nav-link.active {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+/* === SECCIONES GENERALES === */
+
+section h1, section h2 {
+  color: #0d6efd; /* Color Bootstrap primario */
+}
+
+section p.lead {
+  color: #495057;
+}
+
+/* === CARDS === */
+
+.card i {
+  color: #0d6efd;
+}
+
+.card:hover {
+  box-shadow: 0 0 10px rgba(0,0,0,0.15);
+  transform: scale(1.02);
+  transition: all 0.3s ease-in-out;
+}
+
+/* === FOOTER === */
+
+footer {
+  background-color: #212529;
+}
+
+footer a {
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #0d6efd;
+}
+
+/* === FORMULARIO === */
+
+form .form-label {
+  font-weight: 500;
+}
+
+form .form-control:focus {
+  border-color: #0d6efd;
+  box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.25);
+}
+
+/* === TABLAS === */
+
+.table-hover tbody tr:hover {
+  background-color: #e9ecef;
+}
+
+/* === MAPA RESPONSIVO === */
+
+.ratio iframe {
+  border-radius: 10px;
+}
+
+/* === BOTONES === */
+
+.btn-primary {
+  background-color: #0d6efd;
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: #0b5ed7;
+}

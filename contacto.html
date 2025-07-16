@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contacto | ReparaFácil</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet" />
+  <link href="estilos.css" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="index.html"><i class="bi bi-tools"></i> ReparaFácil</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="servicios.html">Servicios</a></li>
+          <li class="nav-item"><a class="nav-link active" href="contacto.html">Contacto</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- FORMULARIO -->
+  <section class="container my-5">
+    <h1 class="text-center mb-4">Contáctanos</h1>
+    <form id="formContacto" class="row g-3 needs-validation" novalidate>
+      <div class="col-md-6">
+        <label for="nombre" class="form-label">Nombre completo</label>
+        <input type="text" class="form-control" id="nombre" required />
+        <div class="invalid-feedback">Este campo es obligatorio.</div>
+      </div>
+      <div class="col-md-6">
+        <label for="telefono" class="form-label">Teléfono</label>
+        <input type="tel" class="form-control" id="telefono" required />
+        <div class="invalid-feedback">Ingresa tu número de contacto.</div>
+      </div>
+      <div class="col-md-6">
+        <label for="email" class="form-label">Correo electrónico</label>
+        <input type="email" class="form-control" id="email" required />
+        <div class="invalid-feedback">Correo inválido.</div>
+      </div>
+      <div class="col-md-6">
+        <label for="servicio" class="form-label">Servicio requerido</label>
+        <select class="form-select" id="servicio" required>
+          <option selected disabled value="">Elige una opción</option>
+          <option>Cambio de pantalla</option>
+          <option>Cambio de batería</option>
+          <option>Reinstalación de software</option>
+        </select>
+        <div class="invalid-feedback">Selecciona un servicio.</div>
+      </div>
+      <div class="col-12">
+        <label for="mensaje" class="form-label">Mensaje adicional</label>
+        <textarea class="form-control" id="mensaje" rows="4"></textarea>
+      </div>
+      <div class="col-12 text-center">
+        <button type="submit" class="btn btn-primary">Enviar mensaje</button>
+      </div>
+    </form>
+  </section>
+
+  <!-- MODAL DE CONFIRMACIÓN -->
+  <div class="modal fade" id="modalConfirmacion" tabindex="-1" aria-labelledby="modalConfirmacionLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalConfirmacionLabel">Mensaje Enviado</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+        </div>
+        <div class="modal-body">
+          ¡Gracias por contactarnos!<br>
+          Pronto nos comunicaremos con usted.
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-success" data-bs-dismiss="modal">Aceptar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- TABLA DE HORARIOS -->
+  <section class="container my-5">
+    <h2 class="text-center mb-4">Horarios de Atención</h2>
+    <div class="table-responsive">
+      <table class="table table-hover table-bordered">
+        <thead class="table-dark">
+          <tr>
+            <th>Día</th>
+            <th>Horario</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Lunes a Viernes</td>
+            <td>9:00 am – 6:00 pm</td>
+          </tr>
+          <tr>
+            <td>Sábado</td>
+            <td>10:00 am – 2:00 pm</td>
+          </tr>
+          <tr>
+            <td>Domingo</td>
+            <td>Cerrado</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- MAPA DE GOOGLE -->
+  <section class="container my-5">
+    <h2 class="text-center mb-4">Ubicación</h2>
+    <div class="ratio ratio-16x9">
+      <iframe 
+        src="https://www.google.com/maps?q=Buenaventura,+Valle+del+Cauca,+Colombia&output=embed" 
+        allowfullscreen 
+        loading="lazy">
+      </iframe>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-dark text-white text-center py-4">
+    <div class="container">
+      <p class="mb-1">&copy; 2025 ReparaFácil. Todos los derechos reservados.</p>
+      <div class="d-flex justify-content-center gap-3">
+        <a href="https://facebook.com" target="_blank" class="text-white fs-4"><i class="bi bi-facebook"></i></a>
+        <a href="https://wa.me/51999999999" target="_blank" class="text-white fs-4"><i class="bi bi-whatsapp"></i></a>
+        <a href="https://instagram.com" target="_blank" class="text-white fs-4"><i class="bi bi-instagram"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Validación y Modal -->
+  <script>
+    const form = document.getElementById('formContacto');
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+      e.stopPropagation();
+
+      if (form.checkValidity()) {
+        const modal = new bootstrap.Modal(document.getElementById('modalConfirmacion'));
+        modal.show();
+        form.reset();
+        form.classList.remove('was-validated');
+      } else {
+        form.classList.add('was-validated');
+      }
+    });
+  </script>
+</body>
+</html>
